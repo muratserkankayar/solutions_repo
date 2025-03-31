@@ -172,22 +172,6 @@
 <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
 <div class="section" itemprop="articleBody">
 <h1 id="problem-1">Problem 1</h1>
-<p>import numpy as np
-import matplotlib.pyplot as plt</p>
-<p>def projectile_range(v0, g=9.81):
-    angles = np.linspace(0, 90, 100)  # Angles between 0 and 90 degrees
-    ranges = (v0**2 * np.sin(2 * np.radians(angles))) / g  # Range formula</p>
-<pre><code>plt.figure(figsize=(8, 5))
-plt.plot(angles, ranges, label=f'Initial Velocity: {v0} m/s')
-plt.xlabel('Projection Angle (degrees)')
-plt.ylabel('Range (meters)')
-plt.title('Projectile Range vs. Angle of Projection')
-plt.legend()
-plt.grid()
-plt.show()
-</code></pre>
-<h1 id="example-usage">Example usage</h1>
-<p>projectile_range(20)  # Plot range graph for an initial velocity of 20 m/s</p>
 </div>
 </div><footer>
 <div aria-label="Footer Navigation" class="rst-footer-buttons" role="navigation">
